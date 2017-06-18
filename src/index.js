@@ -32,6 +32,7 @@ const store = createStore(reducer)
 ReactDOM.render(
   <Provider store={store}>
     <Router path="/" history={browserHistory}>
+      <Route path="/" component={Landing} />
       <Route path="/home" component={Landing} />
       <Route path="/resume" component={Resume} />
       <Route path="/signin" component={Signin} />
